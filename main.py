@@ -1,5 +1,5 @@
 import pandas as pd
 
-df = pd.read_csv('data.csv')
+df = pd.read_json('data.json')
 
-print(pd.options.display.max_rows)
+print(df)
