@@ -1,12 +1,14 @@
 import pandas as pd
 
 myvarr = {
-    'car':['BMW', 'Volvo', 'Tata'],
+    "car":['BMW', 'Volvo', 'Tata'],
 
-    'range':['110', '100', '105']
+    "range":['s', 'd', 'f']
 }
 
 df = pd.DataFrame(myvarr)
 
-print(df.loc[2])
+print(df)
+print("---------------")
+print(df.loc[[0,1]])
 
