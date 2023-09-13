@@ -1,10 +1,16 @@
-import pandas
+import pandas as pd
 
-mydataset = {
-    'cars': ['BMW', 'Volvo', 'Ford'],
-    'passings': [3, 7, 2]
-}
+a = [1, 7, 2]
 
-myvar = pandas.DataFrame(mydataset)
+myvar = pd.Series(a)
 
 print(myvar)
+
+# =========================
+
+b = [[1,3,5],[2,4,6]]
+
+bvar = pd.Series(b)
+
+print(bvar)
+print(bvar[0][1])
