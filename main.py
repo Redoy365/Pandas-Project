@@ -1,14 +1,7 @@
+# Pandas Read CSV
+
 import pandas as pd
 
-myvarr = {
-    "car":['BMW', 'Volvo', 'Tata'],
+df = pd.read_csv('data.csv')
 
-    "range":['s', 'd', 'f']
-}
-
-df = pd.DataFrame(myvarr)
-
-print(df)
-print("---------------")
-print(df.loc[[0,1]])
-
+print(df.to_string())
