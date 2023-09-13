@@ -1,20 +1,12 @@
 import pandas as pd
 
-calories = {"day1": 420, "day2": 380, "day3": 390}
+myvarr = {
+    'car':['BMW', 'Volvo', 'Tata'],
 
-myvar = pd.Series(calories)
-
-print(myvar)
-
-print("------------------------------------------")
-
-import pandas as pd
-
-data = {
-  "calories": [420, 380, 390],
-  "duration": [50, 40, 45]
+    'range':['110', '100', '105']
 }
 
-myvar = pd.DataFrame(data)
+df = pd.DataFrame(myvarr)
 
-print(myvar)
+print(df.loc[2])
+
