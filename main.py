@@ -1,7 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('data1.csv')
 
-df.fillna(130, inplace = True)
+df.dropna(inplace=True)
 
 print(df.to_string())
