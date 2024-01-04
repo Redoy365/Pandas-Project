@@ -5,6 +5,9 @@ data = {
   "duration": [50, 40, 45]
 }
 
-myvar = pd.DataFrame(data, index=["x", "y", "z"])
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
 
-print(myvar)
+print(df)
+print(df.loc[0])
+print(df.loc[[0,1]])
