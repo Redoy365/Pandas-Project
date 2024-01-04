@@ -1,9 +1,5 @@
 import pandas as pd
 
-df = pd.read_csv('data1.csv')
+df = pd.read_csv('data.csv')
 
-x = df["Roll"].mode()[0]
-
-df["Name"].fillna(x, inplace=True)
-
-print(df)
+print(df.to_string())
