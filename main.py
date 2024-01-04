@@ -1,3 +1,7 @@
 import pandas as pd
 
-print(pd.__version__)
+a = [1, 7, 2]
+
+myvar = pd.Series(a)
+
+print(myvar)
