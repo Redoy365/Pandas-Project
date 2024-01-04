@@ -1,3 +1,7 @@
 import pandas as pd
 
-print(pd.options.display.max_rows)
+pd.options.display.max_rows = 170
+
+df = pd.read_csv('data.csv')
+
+print(df)
